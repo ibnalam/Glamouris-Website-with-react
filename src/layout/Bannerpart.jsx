@@ -3,19 +3,10 @@ import Flex from '../components/Flex'
 import Container from '../components/Container'
 import Homelist from '../components/Homelist'
 import {FaAngleRight} from 'react-icons/fa'
-import Image from '../components/Image'
-import Bannerr from '../assets/banner.png'
-import Slider from "react-slick";
+import Image from '../components/Image' 
+import Bannermain from '../assets/Bannermain.png'
 
 const Bannerpart = () => {
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
 
 
   return (
@@ -62,7 +53,9 @@ const Bannerpart = () => {
                         </Flex>
                     </ul>
                 </Flex>
-                  
+                  <div>
+                    <Image src={Bannermain}/>
+                  </div>
             </Flex>
         </Container>
     </div>
