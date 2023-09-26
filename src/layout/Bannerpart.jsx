@@ -4,60 +4,71 @@ import Container from '../components/Container'
 import Homelist from '../components/Homelist'
 import {FaAngleRight} from 'react-icons/fa'
 import Image from '../components/Image' 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Bannermain from '../assets/Bannermain.png'
+import Slider from "react-slick";
+import List from '../components/List'
+
+
+
 
 const Bannerpart = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
 
 
   return (
     <div>
-        <Container className="mt-[40px]">
-            <Flex>
-                <Flex className='w-1/4 border-r border-pl-3 border-solid'>
-                    <ul className='w-full'>
-                        <Flex className="w-full justify-between">
-                        <Homelist text="Woman’s Fashion"/>
-                         <FaAngleRight className=''/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Men’s Fashion"/> 
-                        <FaAngleRight/>
-                        </Flex >
-                        <Flex className="justify-between">
-                        <Homelist text="Electronics"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Home & Lifestyle"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Medicine"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Sports & Outdoor"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Baby’s & Toys"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Groceries & Pets"/>
-                         <FaAngleRight/>
-                        </Flex>
-                        <Flex className="justify-between">
-                        <Homelist text="Health & Beauty"/> 
-                        <FaAngleRight/>
-                        </Flex>
-                    </ul>
-                </Flex>
-                  <div>
+                    
+            <section className='pb-140'>
+            <Container>
+                <Flex className="gap-x-15 relative after:absolute after:top-0 after:left-[235px] after:w-px after:h-full after:bg-gray pt-10">
+                <div className='w-1/4 flex flex-col gap-y-4'>
+                    <div className='flex items-center justify-between w-3/4'>
+                    <List className="hover:after:h-0" text="Woman’s Fashion"/><FaAngleRight/>
+                    </div>
+                    <div className='flex items-center justify-between w-3/4'>
+                    <List className="hover:after:h-0" text="man’s Fashion"/><FaAngleRight/>
+                    </div>
+                    <List className="hover:after:h-0" text="Electronics"/>
+                    <List className="hover:after:h-0" text="Home & Lifestyle"/>
+                    <List className="hover:after:h-0" text="Sports & Outdoor"/>
+                    <List className="hover:after:h-0" text="Baby’s & Toys"/>
+                    <List className="hover:after:h-0" text="Groceries & Pets"/>
+                    <List className="hover:after:h-0" text="Health & Beauty"/>
+                    
+                    
+                </div>
+                <div className='w-3/4 relative'>
+                <Slider {...settings}>
+                    <div>
                     <Image src={Bannermain}/>
-                  </div>
-            </Flex>
-        </Container>
+                    </div>
+                    <div>
+                    <Image src={Bannermain}/>
+                    </div>
+                    <div>
+                    <Image src={Bannermain}/>
+                    </div>
+                    <div>
+                    <Image src={Bannermain}/>
+                    </div>
+                    <div>
+                    <Image src={Bannermain}/>
+                    </div>
+                    </Slider>
+                    
+                </div>
+                </Flex>
+            </Container>
+            </section>
     </div>
   )
 }
