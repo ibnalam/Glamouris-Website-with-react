@@ -23,7 +23,7 @@ import Clientservice from '../Clientservice'
 import ProductOne from '../../assets/ProductOne.png'
 import Monitor from '../../assets/Monitor.png'
 import Keyboard from '../../assets/Keyboard.png'
-import Chair from '../../assets/Chair.png'
+import Chair from '../../assets/Chair.png'     
 import Phons from '../../assets/Phons.png'
 import HeadPhone from '../../assets/HeadPhone.png'
 import Gaming from '../../assets/Gaming.png'
@@ -141,7 +141,7 @@ const Homepart = () => {
 
         <Arrival className="mt-[60px]"/>
         
-        <Clientservice servicename="FREE AND FAST DELIVERY" servicedetails="Free delivery for all orders over $140" servicename2="24/7 CUSTOMER SERVICE" servicedetails2="Friendly 24/7 customer support" servicename3="MONEY BACK GUARANTEE" servicedetails3="We reurn money within 30 days"/>
+        <Clientservice servicename="FREE AND FAST DELIVERY" servicedetails="Free delivery for all orders over $140" servicename2="24/7 CUSTOMER SERVICE" servicedetails2="Friendly 24/7 customer support" servicename3="MONEY BACK GUARANTEE" servicedetails3="We return money within 30 days"/>
      </Container>
      
    </>

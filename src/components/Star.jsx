@@ -9,7 +9,7 @@ const Star = ({className,text}) => {
             <AiFillStar/>
             <AiFillStar/>
             <AiFillStar/>
-            <span className='pl-[90px] absolute -top-[5px]'>{text}</span>
+            <span className={`pl-[90px] absolute -top-[5px] ${className}`}>{text}</span>
     </div>
   )
 }

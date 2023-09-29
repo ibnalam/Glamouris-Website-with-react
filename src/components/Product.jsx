@@ -9,6 +9,8 @@ import Addtocartbtn from './Addtocartbtn'
 import Productname from './Productname'
 import Price from './Price'
 import Star from './Star'
+import { Link } from 'react-router-dom'
+import ProductDetails from './pages/ProductDetails'
 
 const Product = ({basetext,img, Prices , ratingnumber}) => {
 
@@ -16,7 +18,9 @@ const Product = ({basetext,img, Prices , ratingnumber}) => {
       <div className='mx-5 w-[250px] h-[370px] mt-[35px]'>
         <div className='relative overflow-hidden group'>
             <div className='w-[250px] h-[250px]'>
+            <Link to="/product-details">
             <Image src={img} className="m-12"/>
+            </Link>
             </div>
             <Base text={basetext}/>
             <AiOutlineHeart className='absolute top-[12px] right-[20px] text-black'/>

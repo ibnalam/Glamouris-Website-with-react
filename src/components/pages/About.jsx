@@ -11,6 +11,8 @@ import {BsInstagram} from 'react-icons/bs'
 import tomm from '../../assets/tomm.png'
 import emma from '../../assets/emma.png'
 import will from '../../assets/will.png'
+import Clientservice from '../Clientservice'
+
 
 
 
@@ -60,38 +62,41 @@ const About = () => {
     </div>
       </Flex>
 
-      <Flex className="gap-x-40">
-        <div className='1/3'>
+      <Flex className="gap-x-24 mt-[130px]">
+        <div className='w-1/3 bg-gray2 '>
             <Image src={tomm}/>
-            <h4 className='top-[30px]font-poopins text-[32px]'>Tom Cruise</h4>
+            <h4 className='top-[30px]font-poopins text-[32px] mt-[30px]'>Tom Cruise</h4>
             <p className='mt-[2px]'>Founder & Chairman</p>
-            <Flex className="gap-x-6 mt-[12px]">
+            <Flex className="gap-x-6 mt-[12px] text-[22px] mt-[16px]">
               <BiLogoFacebook/>
-              <BsTwitter/>
-              <BsInstagram/>
+              <BsTwitter className='ml-[16px]'/>
+              <BsInstagram className='ml-[16px]'/>
             </Flex>
         </div>
-        <div className='1/3'>
+        <div className='w-1/3 bg-gray2'>
         <Image src={emma}/>
-        <h4 className='top-[30px]font-poopins text-[32px]'>Tom Cruise</h4>
+        <h4 className='top-[30px] font-poopins text-[32px] mt-[30px]'>Tom Cruise</h4>
             <p className='mt-[2px]'>Founder & Chairman</p>
-            <Flex className="gap-x-6 mt-[12px]">
+            <Flex className="gap-x-6 mt-[12px] text-[22px] mt-[16px]">
               <BiLogoFacebook/>
-              <BsTwitter/>
-              <BsInstagram/>
+              <BsTwitter className='ml-[16px]'/>
+              <BsInstagram className='ml-[16px]'/>
             </Flex>
         </div>
-        <div className='1/3'>
+        <div className='w-1/3 bg-gray2'>
         <Image src={will}/>
-        <h4 className='top-[30px]font-poopins text-[32px]'>Tom Cruise</h4>
+        <h4 className='top-[30px] font-poopins text-[32px] mt-[30px]'>Tom Cruise</h4>
             <p className='mt-[2px]'>Founder & Chairman</p>
-            <Flex className="gap-x-6 mt-[12px]">
+            <Flex className="gap-x-6 mt-[12px] text-[22px] mt-[16px]">
               <BiLogoFacebook/>
-              <BsTwitter/>
-              <BsInstagram/>
+              <BsTwitter className='ml-[16px]'/>
+              <BsInstagram className='ml-[16px]'/>
             </Flex>
         </div>
       </Flex>
+      <div>
+      <Clientservice servicename="FREE AND FAST DELIVERY" servicedetails="Free delivery for all orders over $140" servicename2="24/7 CUSTOMER SERVICE" servicedetails2="Friendly 24/7 customer support" servicename3="MONEY BACK GUARANTEE" servicedetails3="We return money within 30 days"/>
+      </div>
       </Container>
   )
 }

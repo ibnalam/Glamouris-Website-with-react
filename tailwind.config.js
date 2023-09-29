@@ -10,7 +10,7 @@ export default {
         "container": "1170px",
       },
       fontFamily:{
-        "poppins": ['DM Sans']
+        "poppins": ['DM Sans-serif']
       },
       fontSize: {
         "16": "16px"
