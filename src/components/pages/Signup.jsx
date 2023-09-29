@@ -1,7 +1,7 @@
 import React from 'react'
 import Flex from '../Flex'
 import Image from '../Image'
-import Signimg from '../../assets/Signimg.png'
+import imgsign from '../../assets/imgsign.png'
 import Sectionlargeheading from '../Sectionlargeheading'
 import List from '../List'
 import Button from '../Button'
@@ -15,7 +15,7 @@ const Signup = () => {
   
       <Flex className="my-[130px]">    
         <div className='w-2/3'>
-          <Image src={Signimg}/>
+          <Image src={imgsign}/>
         </div>
         <div className='w-2/3 pl-[230px] mt-[50px]'>
           <Sectionlargeheading text="Create an account"/>
