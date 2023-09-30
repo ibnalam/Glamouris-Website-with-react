@@ -40,7 +40,7 @@ import p8 from '../../assets/p8.png'
 import p9 from '../../assets/p9.png'
 import p10 from '../../assets/p10.png'
 import p11 from '../../assets/p11.png'
-import Footer from '../Footer'
+import ClockCounter from '../ClockCounter'
 
 
 // icons here 
@@ -66,7 +66,7 @@ const Homepart = () => {
         </Flex>
         <Flex>
         <Sectionlargeheading text="Flash Sales"/>
-        <Clock/>
+        <ClockCounter className=" ml-[87px]" duration={4 * 24* 60 * 60 * 1000}/>
         <Sectionicon/>
         </Flex>
         <Flex>

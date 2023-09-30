@@ -74,8 +74,8 @@ const ProductDetails = () => {
                   <input id='test2' type="checkbox" className='peer/test2' hidden/>
                     <label className='relative mt-0 inline-block pl-5 before:w-3 before:h-3 before:border before:border-solid before:border-input before:rounded-[50%] before:absolute before:top-1.5 before:left-0 before:content[""]  after:w-2 after:h-2 after:peer-checked/test2:border after:peer-checked/test2:border-solid after:peer-checked/test2:border-white after:absolute after:rounded-[50%] after:top-2 after:left-0.5 after:content[""] after:peer-checked/test2:bg-gray' for='test2'>
                     </label>
-          
-        
+
+                    
                     <input id='test3' type="checkbox" className='peer/test3' hidden/>
                       <label className='relative mt-0  inline-block pl-5 before:w-3 before:h-3 before:border before:border-solid before:border-input before:rounded-[50%] before:absolute before:top-1.5 before:left-0 before:content[""]  after:w-2 after:rounded-[50%] after:h-2 after:peer-checked/test3:border after:peer-checked/test3:border-solid after:peer-checked/test3:border-white after:absolute after:top-2 after:left-0.5 after:content[""] after:peer-checked/test3:bg-red' for='test3'>
                       </label>
