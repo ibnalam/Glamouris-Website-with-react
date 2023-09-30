@@ -33,7 +33,7 @@ const Bannercounter = ({className,duration}) => {
 
   return (
         <Flex className="gap-x-6">
-            <div className={`bg-white h-[62px] w-[62px] text-center relative rounded-[50%] ${className}`}>
+            <div className={`bg-white h-[62px] w-[62px] - text-center relative rounded-[50%] ${className}`}>
                 <Clockheading text={hours < 10 ? "0" + hours : hours} className="pl-0 text-[26px]"/>
                 <Clockname text="Hours" className=" text-black pl-0 -mt-[10px]"/>
             </div>

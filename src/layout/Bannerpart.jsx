@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Bannermain from '../assets/Bannermain.png'
 import Slider from "react-slick";
 import List from '../components/List'
+import '../App.css'
 
 
 
@@ -21,6 +22,11 @@ const Bannerpart = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        appendDots: dots => (
+            <div>
+              <ul> {dots} </ul>
+            </div>
+          ),
       };
 
 

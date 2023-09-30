@@ -1,0 +1,47 @@
+.slick-dots {
+    bottom: 20px !important;  
+}
+
+.slick-dots ul{
+    background: transparent !important;
+}
+
+.slick-dots ul li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(209, 209, 209);
+}
+
+.slick-dots li button {
+    width: 15px !important;
+    height: 15px !important;
+    padding: 7px !important;
+    border-radius: 50%;
+    border-style: solid;
+    border: 2px;
+    
+}
+
+
+.slick-dots li button:before {
+    font-family: 'none' !important;
+    opacity: 0 !important;
+}
+
+.slick-active button{
+    background: rgb(174, 36, 36) !important;
+}
+
+
+
+
+
+
+/* 
+.slick-active button{
+    border: 2px !important;
+    border-color: rgb(19, 206, 32) !important;
+}
+ */
+
