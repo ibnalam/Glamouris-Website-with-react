@@ -13,7 +13,7 @@ const Musicbanner = () => {
                 <p className='font-poppins text-base text-[14px] text-green pt-[70px]'>Catagories</p>
                 <h4 className='text-white text-[48px] leading-[60px] pt-[32px]'>Enhance your Music Experience </h4>
                 <div className='pt-[30px]'>
-                <Bannercounter className="" duration={23 * 5* 60 * 60 * 1000}/>
+                <Bannercounter className="" duration={24 * 5* 60 * 60 * 1000}/>
                 </div>
                 <button className='mt-[30px] border  bg-green py-4 px-16  border-solid border-black hover:bg-white hover:text-black duration-500 '>
                     Buy Now 
